@@ -1,5 +1,9 @@
 {
     "name": "jquery-simplecolorpicker",
+    "main": [
+        "jquery.simplecolorpicker.js",
+        "jquery.simplecolorpicker.css"
+    ],
     "version": "0.3.0",
     "dependencies": {
         "jquery": ">=1.10"
