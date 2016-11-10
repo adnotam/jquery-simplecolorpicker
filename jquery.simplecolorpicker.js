@@ -59,7 +59,12 @@
       // <span class="color selected" title="Green" style="background-color: #7bd148;" role="button"></span>
       self.$select.find('> option').each(function() {
         var $option = $(this);
-        var color = $option.val();
+
+        var color_val = $option.val();
+        var color = color_val;
+        if(self.options.colorField !== 'val') {
+          color = $option.data(self.options.colorField);
+        }
 
         var isSelected = $option.is(':selected');
         var isDisabled = $option.is(':disabled');
@@ -88,6 +93,7 @@
                          + title
                          + ' style="background-color: ' + color + ';"'
                          + ' data-color="' + color + '"'
+                         + ' data-val="' + color_val + '"'
                          + selected
                          + disabled
                          + role + '>'
@@ -146,6 +152,7 @@
      */
     selectColorSpan: function($colorSpan) {
       var color = $colorSpan.data('color');
+      var color_val = $colorSpan.data('val');
       var title = $colorSpan.prop('title');
 
       // Mark this span as the selected one
@@ -159,7 +166,7 @@
       }
 
       // Change HTML select value
-      this.$select.val(color);
+      this.$select.val(color_val);
     },
 
     /**
@@ -229,7 +236,9 @@
     picker: false,
 
     // Animation delay in milliseconds
-    pickerDelay: 0
+    pickerDelay: 0,
+
+    colorField: 'val'
   };
 
 })(jQuery);
