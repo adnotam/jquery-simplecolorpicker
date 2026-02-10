@@ -1,3 +1,5 @@
+**I don't use jquery-simplecolorpicker anymore so I won't update this repository. If you have a well maintained fork, I will be happy to promote it here.**
+
 # Very simple jQuery color picker
 
 Yet another jQuery color picker. This plugin is unobtrusive and integrates well with Twitter Bootstrap (it works just fine without).
@@ -5,9 +7,21 @@ The source code only requires jQuery and is about 200 lines of JavaScript and 10
 
 See the [online demo](http://plnkr.co/edit/VVclW0?p=preview).
 
-![simplecolorpicker-inline.png](http://img11.hostingpics.net/pics/75504320131025121603ColorpickerforjQuery.png)
+![jquery-simplecolorpicker-inline.png](jquery-simplecolorpicker-inline.png)
 
-![simplecolorpicker-picker.png](http://img11.hostingpics.net/pics/71709820131025122115ColorpickerforjQuery.png)
+![jquery-simplecolorpicker-picker.png](jquery-simplecolorpicker-picker.png)
+
+## npm
+
+```
+npm install jquery-simplecolorpicker
+```
+
+## Bower
+
+```
+bower install jquery-simplecolorpicker
+```
 
 ## How to use
 
@@ -78,12 +92,6 @@ most of the time the widget is less user-friendly than the one provided by simpl
 See http://slides.html5rocks.com/#new-form-types
 
 See http://dev.w3.org/html5/markup/input.color.html#input.color
-
-## Bower
-
-```
-bower install jquery-simplecolorpicker
-```
 
 ## AngularJS directive
 
